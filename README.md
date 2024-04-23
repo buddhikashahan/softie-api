@@ -1,4 +1,4 @@
-# softie-apis
+# softie-api
 
 A module with api collection. Written with only Javascript and a node-friendly streaming interface.
 
@@ -8,19 +8,19 @@ You can contact me for support on [WhasApp](https://wa.me/94766866297)
 ## Install
 
 ```bash
-npm install softie-apis@latest
+npm install softie-api@latest
 ```
 
 Or for Yarn users:
 ```bash
-yarn add softie-apis@latest
+yarn add softie-api@latest
 ```
 
-Make sure you're installing the latest version of softie-apis to keep up with the latest fixes.
+Make sure you're installing the latest version of softie-api to keep up with the latest fixes.
 
 ## Usage
 ```js
-const api = require('softie-apis');
+const api = require('softie-api');
 const url = 'https://www.instagram.com/reel/C5_Gu_uIF9Y';
 
 api.instagramDown(url)
@@ -69,4 +69,4 @@ api.instagramDown(url)
 }
 ```
 
-Thank you for using softie-apis.
+Thank you for using softie-api.
