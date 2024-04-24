@@ -17,7 +17,14 @@ yarn add softie-api@latest
 ```
 
 Make sure you're installing the latest version of softie-api to keep up with the latest fixes.
-
+## Functions
+| Function  | Description |
+| ------------- | ------------- |
+| instagramDown  | Download media from instagram  |
+| facebookDown  | Download videos from facebook  |
+| tiktokDown  | Download videos from tiktok  |
+| youtubeDown  | Download videos and audio from youtube  |
+| youtubeSearch  | Search videos on youtube  |
 ## Usage
 ```js
 const api = require('softie-api');
@@ -33,13 +40,7 @@ api.instagramDown(url) //check functions table for other functions
         console.log(error);
     });
 ```
-## Functions
-| Function  | Description |
-| ------------- | ------------- |
-| instagramDown  | Download media from instagram  |
-| facebookDown  | Download videos from facebook  |
-| tiktokDown  | Download videos from tiktok  |
-| youtubeDown  | Download videos and audio from youtube  |
+
 ## Sample Output
 
 #### instagramDown:
@@ -87,6 +88,195 @@ api.instagramDown(url) //check functions table for other functions
   },
   audio: 'https://rr2---sn-q0c7rn7d.googlevideo.com/videoplayback?expire=1713946666&ei=ymsoZq-fMIrIp-oPg6Kl-AE&ip=52.31.42.66&id=o-AB2KgHzOnPuOQ7J0B0IsMEiIfDhtjACDIrtG6gG7JL8R&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=u4&mm=31%2C29&mn=sn-q0c7rn7d%2Csn-q0cedn7s&ms=au%2Crdu&mv=m&mvi=2&pl=23&initcwndbps=768750&bui=AWRWj2QZi34HMQHd21padicHVRB4oaYnxL-kiq7YufqhxsKDPiNfOsI1O5WkcMHxDeIqUBGdC4C3Jvuw&vprv=1&mime=audio%2Fmp4&gir=yes&clen=2823287&dur=174.381&lmt=1713824991880387&mt=1713924291&fvip=4&keepalive=yes&lmw=1&c=ANDROID_TV&txp=4432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgS_oSiWwV30zY0TtaEcd4YP0-l2euguWD60j5wY873aMCIB76mYZ_ErHPHMLfZ3-p2V7_as39UwBrRalsLyShxufG&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHWaYeowRQIgeBY0MwRjVF8dEDtUWD0Sml4YLEMYeAXL5H-bQVJsiXgCIQC6MoDa4mjsE5w7RPJupYDUAXQKQQ489wtpAS9hgG1aGg%3D%3D&title=SRIKANTH%3A+PAPA+KEHTE+HAIN+%28Song%29+%7C+RAJKUMMAR+RAO+%7C+UDIT+NARAYAN%2C+ANAND-MILIND%2C+ADITYA+D+%7C+BHUSHAN+K'
 }
+```
+#### youtubeSearch:
+```output
+[
+  {
+    title: 'Lelena (ලෙලෙනා) - Nilan Hettiarachchi Official Music Video',
+    url: 'https://www.youtube.com/watch?v=0geqOYqwL0s&pp=ygUGbGVsZW5h',
+    author: 'SGM Tunes',
+    thumbnail: 'https://i.ytimg.com/vi/0geqOYqwL0s/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfFvTlEIJe5q0kS0fUip9ArX_vFQ',
+    views: '35M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Nilan Hettiarachchi - ලෙලෙනා | Lelena (Lyrics)',
+    url: 'https://www.youtube.com/watch?v=AFqtArWpv-w&pp=ygUGbGVsZW5h',
+    author: 'SL Lyrics',
+    thumbnail: 'https://i.ytimg.com/vi/AFqtArWpv-w/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACGfIZru1QAFwps7NbN6zlwDhFAw',
+    views: '494K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Nasuna - Smokio Ft. Dinesh Gamage | Chamath Sangeeth - Official Music Video',
+    url: 'https://www.youtube.com/watch?v=dOpW7ewpJwI&pp=ygUGbGVsZW5h',
+    author: 'C Music',
+    thumbnail: 'https://i.ytimg.com/vi/dOpW7ewpJwI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0t4OI1QX6pIOOnup1XcSE3aRLEw',
+    views: '38M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'ලෙලෙනා - Lelena | Nilan Hettiarachchi song | Chipmunks & Himabole version song with lyrics',
+    url: 'https://www.youtube.com/watch?v=qcKQCymbXWE&pp=ygUGbGVsZW5h',
+    author: 'Chama Academy',
+    thumbnail: 'https://i.ytimg.com/vi/qcKQCymbXWE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHmTcjMjS8XLsDYsVlPLHi7fIOtQ',
+    views: '1.5M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Nasuna vs lelena dj kawadi baila dance mix | new bus video collection | new song kawadi baila remix',
+    url: 'https://www.youtube.com/watch?v=7vzec3qK7m4&pp=ygUGbGVsZW5h',
+    author: 'BUS MART LK',
+    thumbnail: 'https://i.ytimg.com/vi/7vzec3qK7m4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQR54mhtOEzhvC4YoKURbuaj6osA',
+    views: '3.2M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Hade Upan Lande (හදේ උපන් ළඳේ)| Dinusha X sky jay | official music video | lyrics 🥰',
+    url: 'https://www.youtube.com/watch?v=9cDVs54eJqo&pp=ygUGbGVsZW5h',
+    author: 'SL Crypto Family',
+    thumbnail: 'https://i.ytimg.com/vi/9cDVs54eJqo/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBocRmDYpB7DILBEwiWUDKZZJP0Bw',
+    views: '2.9M views',
+    upload: '1 year ago'
+  },
+  {
+    title: 'PAAGAL BETA 79 | Desi Comedy Video | CS Bisht Vines | Jokes',
+    url: 'https://www.youtube.com/watch?v=F7vwwMBSlDs&pp=ygUGbGVsZW5h',
+    author: 'CS Bisht Vines',
+    thumbnail: 'https://i.ytimg.com/vi/F7vwwMBSlDs/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMpN9B5L3Ph-zDimkenwO0RipO7A',
+    views: '1.2M views',
+    upload: '6 days ago'
+  },
+  {
+    title: 'දොන් ජිං ජිං දොන් තරිකිට - Don jin jin don tharikita lyrics | Himabole Studio | Alvin new video',
+    url: 'https://www.youtube.com/watch?v=HoVwk6rwR9A&pp=ygUGbGVsZW5h',
+    author: 'Himabole Studio',
+    thumbnail: 'https://i.ytimg.com/vi/HoVwk6rwR9A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCOpfNS00tYBVnNNo6vQeS5Ph6f7Q',
+    views: '3.6M views',
+    upload: '1 year ago'
+  },
+  {
+    title: 'Lokayen Yamu (ලෝකයෙන් යමු) | SONIC & FREE FIRE MIX',
+    url: 'https://www.youtube.com/watch?v=jKgJYcJ-ADU&pp=ygUGbGVsZW5h',
+    author: 'SL Music With Sayum And Navidu',
+    thumbnail: 'https://i.ytimg.com/vi/jKgJYcJ-ADU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCq6Nu_lC3u_BGzifSurULJoJeIAg',
+    views: '181K views',
+    upload: '1 year ago'
+  },
+  {
+    title: 'Lelena(ලෙලෙනා) Dj Remix [6-8 Beat] - Nilan Hettiarachchi',
+    url: 'https://www.youtube.com/watch?v=qwSmrzQmfgA&pp=ygUGbGVsZW5h',
+    author: 'Yaka Vibes',
+    thumbnail: 'https://i.ytimg.com/vi/qwSmrzQmfgA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7xMxDWxyuOyWpKGXS1_TF1wBsAw',
+    views: '2.8M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena  Dj Remix (ලෙලෙනා ඩීජේ රිමික්ස් ) - Nilan Hettiarachchi Dj Dumidu Lelena Dj Lelena Remix',
+    url: 'https://www.youtube.com/watch?v=grzshdSMOlM&pp=ygUGbGVsZW5h',
+    author: 'Ramchand Records',
+    thumbnail: 'https://i.ytimg.com/vi/grzshdSMOlM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhtEjj4LMa4LI-ZPM5MPdCrO4Ceg',
+    views: '969K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena - Nilan Hettiarachchi Karoke Without Voice',
+    url: 'https://www.youtube.com/watch?v=4luwVWDLpX0&pp=ygUGbGVsZW5h',
+    author: 'PRAMUKA KAROKE MUSIC',
+    thumbnail: 'https://i.ytimg.com/vi/4luwVWDLpX0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD5mgcGpJiHSTZJWL4iBCdeCzF1cg',
+    views: '576K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Age Sugani Dj Remix Song Jhan Jhan Hard Bass Dholki Mix ) New Maghi Sad 💔 Song 2024 Dj Nikku Deewana',
+    url: 'https://www.youtube.com/watch?v=qXWxzaluNS4&pp=ygUGbGVsZW5h',
+    author: '𝘿𝙟 𝙉𝙞𝙠𝙠𝙪 𝘿𝙞𝙬𝙖𝙣𝙖',
+    thumbnail: 'https://i.ytimg.com/vi/qXWxzaluNS4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCaeQAZqdzyig8LlviSyLVemx_36g',
+    views: '193 views',
+    upload: '2 days ago'
+  },
+  {
+    title: 'Lelena (ලෙලෙනා) - Nilan Hettiarachchi new sinhala song 2021 ( KOREAN MIX ) FULL HD The heirs',
+    url: 'https://www.youtube.com/watch?v=KhI-EDojMSo&pp=ygUGbGVsZW5h',
+    author: 'Yt World Music ♪',
+    thumbnail: 'https://i.ytimg.com/vi/KhI-EDojMSo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHNIws8srMlmERnd4bytG5-P-JSQ',
+    views: '7.3K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena ( ලෙලෙනා) Dance Cover | Sonali ft. Piumi',
+    url: 'https://www.youtube.com/watch?v=FLquan5T2ro&pp=ygUGbGVsZW5h',
+    author: 'Sonali Thamarasa',
+    thumbnail: 'https://i.ytimg.com/vi/FLquan5T2ro/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPk6y2hg4htKgkRUlDC3X_u8Cl8w',
+    views: '741K views',
+    upload: '2 years ago'
+  },
+  {
+    title: '#Lelena #DanceCover #DeDazzles Lelena Song | Dance Cover | De Dazzles | Sri Lanka',
+    url: 'https://www.youtube.com/watch?v=xKFUym3OeeU&pp=ygUGbGVsZW5h',
+    author: 'De Dazzles',
+    thumbnail: 'https://i.ytimg.com/vi/xKFUym3OeeU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnW59MFrkvoWKQk4GxQ6fGLlxcJA',
+    views: '459K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Nasuna  | lelena | Manike dj dance mix | new bus dj nonstop ewmix | 2021 hitz dj nonstop|2021 new dj',
+    url: 'https://www.youtube.com/watch?v=LSxabirl4m0&pp=ygUGbGVsZW5h',
+    author: 'Bus lk official',
+    thumbnail: 'https://i.ytimg.com/vi/LSxabirl4m0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCraynbsx2Dd4uOCqIKrizFKiwG-w',
+    views: '1.1M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena (ලෙලෙනා ) | Nilan Hettiarachchi |thanu music cover',
+    url: 'https://www.youtube.com/watch?v=Dty604poHAU&pp=ygUGbGVsZW5h',
+    author: 'THANU MUSIC',
+    thumbnail: 'https://i.ytimg.com/vi/Dty604poHAU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1N5Cs8XCJgb5OO-ejd_Z5RhDf1A',
+    views: '539K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'lelena,rahasak || chipmunks 🐿 version || 2021 new dj remix song || new chipmunks cover 2021|| bus dj',
+    url: 'https://www.youtube.com/watch?v=YHIuxh06L9Y&pp=ygUGbGVsZW5h',
+    author: 'sl bus college',
+    thumbnail: 'https://i.ytimg.com/vi/YHIuxh06L9Y/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoGWNC-G739_dAoDuGMu55LBXgvA',
+    views: '1M views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena bus dj remix | lelena song nilan hettiarachchi | lelena dj song | bus dj 2021 song',
+    url: 'https://www.youtube.com/watch?v=e81CrMittHY&pp=ygUGbGVsZW5h',
+    author: 'Bus lk official',
+    thumbnail: 'https://i.ytimg.com/vi/e81CrMittHY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSB5V0tGa9GoAMN2C-GBhKUIInxA',
+    views: '289K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena (ලෙලෙනා) -Official Remix | Nilan Hettiarachchi | Dexer and Zack N',
+    url: 'https://www.youtube.com/watch?v=F_GGULnBrqs&pp=ygUGbGVsZW5h',
+    author: 'SGM Records',
+    thumbnail: 'https://i.ytimg.com/vi/F_GGULnBrqs/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArLacs5_xd2oyIR-ZXzUlCLo90Xw',
+    views: '54K views',
+    upload: '2 years ago'
+  },
+  {
+    title: 'Lelena (ලෙලෙනා) Free Fire Animation Movie | Music Video |',
+    url: 'https://www.youtube.com/watch?v=2MLcLaMGUUA&pp=ygUGbGVsZW5h',
+    author: 'SL Music With Sayum And Navidu',
+    thumbnail: 'https://i.ytimg.com/vi/2MLcLaMGUUA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgoB4P4_g987iq44AYL13EEUSh6g',
+    views: '48K views',
+    upload: '1 year ago'
+  },
+  {
+    title: 'Laga Lagatama (ලඟ ලඟටම) - Thiwanka Dilshan Ft. Shan Putha | Official Music Video',
+    url: 'https://www.youtube.com/watch?v=b7dUGLCpH2A&pp=ygUGbGVsZW5h',
+    author: 'SGM Tunes',
+    thumbnail: 'https://i.ytimg.com/vi/b7dUGLCpH2A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmqUeQjPe4r9oDzfudIgUo7scRgg',
+    views: '30M views',
+    upload: '2 years ago'
+  }
+]
 ```
 
 Thank you for using softie-api.

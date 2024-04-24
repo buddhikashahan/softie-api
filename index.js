@@ -8,4 +8,5 @@ module.exports = {
     facebookDown: facebook.facebookDown,
     tiktokDown: tiktok.tiktokDown,
     youtubeDown: youtube.youtubeDown,
+    youtubeSearch: youtube.youtubeSearch,
 };
