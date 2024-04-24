@@ -62,6 +62,22 @@ api.instagramDown(url)
 #### tiktokDown:
 ```output
 {
+  author: '𝗣𝗿𝗶𝗻𝗰𝗲𝘀𝘀 𝗲𝗹𝘀𝗮💗🖇️',
+  title: '🤭🤭 #princess_elsa #princess_elsa01 #trending #viral #2million #dn💙🧸✨ #elsa🙈🍄 #funny @SĦɆNƗ ɃȺɃȺ★🤍࿓🕊️',
+  avatar: 'https://tikcdn.io/tiktokdownload/a/aHR0cHM6Ly9wMTYtc2lnbi1zZy50aWt0b2tjZG4uY29tL2F3ZW1lLzEwMHgxMDAvdG9zLWFsaXNnLWF2dC0wMDY4L2I4ZWViYzlmYjk4ODJhM2UzODRmMjM4ODYzMTQxYTQ4LndlYnA/bGszcz00NTEyNjIxNyZub25jZT05NTI2MSZyZWZyZXNoX3Rva2VuPWRmNTU0OTJiMmFlMmI4MDQwYTZiYWZhZmJhNDk0YzE2JngtZXhwaXJlcz0xNzEzOTQ1NjAwJngtc2lnbmF0dXJlPW9kVlVFWU9VdlVYWkZ6TDFvRk9CcmRXeG95ayUzRA==',
+  video: 'https://tikcdn.io/tiktokdownload/7353492524763286791',
+  audio: 'https://tikcdn.io/tiktokdownload/aHR0cHM6Ly9zZjE2LWllcy1tdXNpYy1zZy50aWt0b2tjZG4uY29tL29iai90aWt0b2stb2JqLzczMTgzOTU1MjgzODY5Mzk2NTAubXAz'
+}
+```
+```output
+{
+  type: 'video',
+  url: 'https://ig211.snap-data.xyz/ig/1713866907/a226853652fa3fd1041467fa545678a31b951a7ee1561e62c50f5abf2d51cbee?file=aHR0cHM6Ly9zY29udGVudC5jZG5pbnN0YWdyYW0uY29tL3YvdDY2LjMwMTAwLTE2LzEwMDAwMDAwXzE2MjgwNDkxNDQ1OTk1MTRfMzMyNDI2MDkwNTU3MjU3MDE3MV9uLm1wND9fbmNfaHQ9c2NvbnRlbnQtc2luNi0zLmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDYmX25jX29oYz1lVHEzZDA2QnR5NEFiNUVSRUFuJmVkbT1BUF9WMTBFQkFBQUEmY2NiPTctNSZvaD0wMF9BZkJuNmVTYm5PUHpMZVZmdnlMUzhtR3A0SE1fckh6bTBKSWh6akJ6LTJyaTJBJm9lPTY2Mjk2MEM1Jl9uY19zaWQ9Mjk5OWI4Jm5hbWU9U2F2ZUlHLkFwcF8zMzUwNDI2MjY1NTgxNTQzMjU2Lm1wNA'
+}
+```
+#### youtubeDown:
+```output
+{
   title: 'SRIKANTH: PAPA KEHTE HAIN (Song) | RAJKUMMAR RAO | UDIT NARAYAN, ANAND-MILIND, ADITYA D | BHUSHAN K',
   duration: '02:54 minutes',
   thumbnail: 'https://i.ytimg.com/vi/uN7vjc7deuA/hqdefault.jpg?v=662673e5',
