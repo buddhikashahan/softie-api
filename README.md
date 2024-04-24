@@ -23,7 +23,7 @@ Make sure you're installing the latest version of softie-api to keep up with the
 const api = require('softie-api');
 const url = 'https://www.instagram.com/reel/C5_Gu_uIF9Y';
 
-api.instagramDown(url)
+api.instagramDown(url) //check functions table for other functions
     .then(data => {
         //handle data
        console.log(data);
