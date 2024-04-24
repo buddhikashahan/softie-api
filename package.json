@@ -1,6 +1,6 @@
 {
   "name": "softie-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A module with api collection. Written with only Javascript and a node-friendly streaming interface.",
   "main": "index.js",
   "scripts": {
