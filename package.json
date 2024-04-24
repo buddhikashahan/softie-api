@@ -1,6 +1,6 @@
 {
   "name": "softie-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A module with api collection. Written with only Javascript and a node-friendly streaming interface.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/buddhikashahan/softie-api.git"
   },
-  "keywords": [ "facebook", "tiktok", "instagram", "api", "javascript", "nodejs", "softie" ],
+  "keywords": [
+    "facebook",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "api",
+    "javascript",
+    "nodejs",
+    "softie"
+  ],
   "author": "Buddhika Shahan",
   "license": "ISC",
   "bugs": {
@@ -21,6 +30,6 @@
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "node-fetch": "^3.3.2",
-    "puppeteer": "^22.6.5"
+    "puppeteer": "^22.7.0"
   }
 }
